@@ -1,0 +1,35 @@
+export const movies =  
+   [
+    { 
+     id:"1",
+     poster:"https://i.pinimg.com/736x/c2/ae/27/c2ae273a32c06cba7ac0add07bc649b1.jpg",
+     title:"Dune",
+     year:"2006",
+     genre:"commedia",
+     watched:true 
+    },
+    { 
+     id:"2",
+     poster:"https://i.pinimg.com/1200x/50/db/92/50db9269efd76c39b0a44c1a0da56655.jpg",
+     title:"Il Padrino",
+     year:"1998",
+     genre:"guerra",
+     watched:true 
+    },
+    { 
+     id:"3",
+     title:"L'Odissea",
+     poster:"https://i.pinimg.com/1200x/ec/89/07/ec890787d756d32f843c8c4deff17df3.jpg", 
+     year:"2026", 
+     genre:"guerra",
+     watched:true
+    },
+    { 
+     id:"4",
+     poster:"https://i.pinimg.com/736x/32/01/c6/3201c6286ed4210b40c93071ebcfd31f.jpg",
+     title:"Spiderman", 
+     year:"2012", 
+     genre:"tragedia",
+     wathced:false
+    }
+  ]

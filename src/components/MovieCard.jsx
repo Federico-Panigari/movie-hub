@@ -1,13 +1,31 @@
-function MovieCard({ id, title, year, poster, genre, watched }) {
+function MovieCard({ title, year, poster, genre, watched }) {
 
   return (
     <article className="movie-card">
-      <h3>{title}</h3>
-      <p>{year}</p>
-      <img src={poster} alt="poster"></img>
-      <p>{genre}</p>
-      <p>{watched ? "visto" : "non visto"}</p>
-   </article>
+     
+      <img className="movie-image"
+        src={poster} alt="poster"
+      />
+
+      <div className="movie-data">
+        <h3 className="movie-title">
+          {title}
+        </h3>
+
+        <p className="movie-year">
+          {year}
+        </p>
+
+        <p className="movie-genre">
+          {genre}
+        </p>
+
+        <p className="movie-flag">
+          {watched ? "visto" : "non visto"}
+        </p>  
+      </div>
+
+    </article>
   )
 }
 
