@@ -28,7 +28,8 @@ function MovieCard({ ...props }) {
         <p className="movie-flag">
           {watched ? "visto" : "non visto"}
         </p>  
-      </div>  
+      </div>
+        
     </article>
   )
 }

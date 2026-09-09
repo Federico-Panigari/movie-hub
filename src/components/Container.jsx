@@ -1,6 +1,9 @@
 function Container({ children }) {
+  
   return (
-    <div className="container">{children}</div>
+    <div className="movies-container">
+      {children}
+    </div>
   )
 }
 

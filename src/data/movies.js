@@ -1,10 +1,10 @@
-export const movies =  
+export const allMovies =  
    [
     { 
      id:"1",
      poster:"https://i.pinimg.com/736x/c2/ae/27/c2ae273a32c06cba7ac0add07bc649b1.jpg",
      title:"Dune",
-     year:"2006",
+     year:"2020",
      genre:"commedia",
      watched:true,
      favorite: false
@@ -33,7 +33,7 @@ export const movies =
      title:"Spiderman", 
      year:"2012", 
      genre:"tragedia",
-     wathced:false,
+     watched:false,
      favorite: false
     }
   ]
