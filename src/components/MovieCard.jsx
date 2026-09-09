@@ -1,11 +1,16 @@
-function MovieCard({ title, year, poster, genre, watched }) {
-
+function MovieCard({ ...props }) {
+  const { id, title, poster, genre, year, watched, favorite, toggleFavorite } = props;
+  
   return (
     <article className="movie-card">
      
       <img className="movie-image"
         src={poster} alt="poster"
       />
+
+      <button className="movie-favorite" onClick={() => toggleFavorite(id)}>
+       {favorite ? "★" : "☆"}
+      </button>
 
       <div className="movie-data">
         <h3 className="movie-title">
@@ -23,8 +28,7 @@ function MovieCard({ title, year, poster, genre, watched }) {
         <p className="movie-flag">
           {watched ? "visto" : "non visto"}
         </p>  
-      </div>
-
+      </div>  
     </article>
   )
 }

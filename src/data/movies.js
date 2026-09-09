@@ -6,7 +6,8 @@ export const movies =
      title:"Dune",
      year:"2006",
      genre:"commedia",
-     watched:true 
+     watched:true,
+     favorite: false
     },
     { 
      id:"2",
@@ -14,7 +15,8 @@ export const movies =
      title:"Il Padrino",
      year:"1998",
      genre:"guerra",
-     watched:true 
+     watched:true,
+     favorite: false
     },
     { 
      id:"3",
@@ -22,7 +24,8 @@ export const movies =
      poster:"https://i.pinimg.com/1200x/ec/89/07/ec890787d756d32f843c8c4deff17df3.jpg", 
      year:"2026", 
      genre:"guerra",
-     watched:true
+     watched:true,
+     favorite: false
     },
     { 
      id:"4",
@@ -30,6 +33,7 @@ export const movies =
      title:"Spiderman", 
      year:"2012", 
      genre:"tragedia",
-     wathced:false
+     wathced:false,
+     favorite: false
     }
   ]
