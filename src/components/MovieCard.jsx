@@ -8,8 +8,12 @@ function MovieCard({ ...props }) {
         src={poster} alt="poster"
       />
 
+      <div className="movie-flag">
+        {watched ? "visto" : "non visto"}
+      </div>
+
       <button className="movie-favorite" onClick={() => toggleFavorite(id)}>
-       {favorite ? "★" : "☆"}
+        {favorite ? "★" : "☆"}
       </button>
 
       <div className="movie-data">
@@ -24,11 +28,8 @@ function MovieCard({ ...props }) {
         <p className="movie-genre">
           {genre}
         </p>
-
-        <p className="movie-flag">
-          {watched ? "visto" : "non visto"}
-        </p>  
-      </div>  
+      </div>
+        
     </article>
   )
 }
