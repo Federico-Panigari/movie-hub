@@ -13,7 +13,7 @@ body
  padding: 0 15px; 
  color: white; 
  font-weight: bolder;
- background-color: rgb(66, 25, 112); 
+ background-color: rgb(66, 25, 112, 0.8); 
  border: 1px solid white; 
  border-radius: 20px;
  outline: none; 
@@ -22,6 +22,12 @@ body
 .search-bar::placeholder 
 {
  color: whitesmoke;
+}
+
+.search-bar:focus
+{
+  background-color: rgb(66, 25, 112); 
+
 }
 
 
