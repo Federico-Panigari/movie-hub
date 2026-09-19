@@ -1,4 +1,5 @@
-import { useEffect, useRef } from "react"
+import { useEffect, useRef } from 'react'
+import styles from './SearchBar.module.css'
 
 
 function SearchBar({ searchTerm, onSearch }) {
@@ -10,13 +11,13 @@ function SearchBar({ searchTerm, onSearch }) {
   }, []);
 
   return (
-    <input className="search-bar"
+    <input className={styles.searchbar}
       type="text" 
       ref={inputRef}
       value={searchTerm} 
       onChange={(e) => onSearch(e.target.value)}
-      placeholder='Cerca film ...'>
-    </input>
+      placeholder='Cerca film ...'
+    />
   )
 }
 

@@ -1,0 +1,97 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+  min-height: 70px;
+  padding: 0 25px;
+
+  background-color: rgb(44, 16, 75);
+  border-bottom: 1px solid black;
+  box-shadow: 0px 2px 10px 1px;
+}
+
+
+/* LOGO + TITOLO */
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 45px;
+  height: 45px;
+
+  object-fit: contain;
+}
+
+.text {
+  margin: 0;
+
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+
+/* MENU */
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+
+/* LINK */
+
+.item {
+  display: block;
+
+  padding: 10px 18px;
+
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 15px;
+  font-weight: 600;
+
+  text-decoration: none;
+
+  border: 1px solid transparent;
+  border-radius: 20px;
+
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.item:hover {
+  color: white;
+
+  background-color: rgb(66, 25, 112);
+
+  border: 1px solid white;
+
+  transform: scale(1.02);
+}
+
+
+/* LINK ATTIVO */
+
+.active {
+  color: white;
+
+  background-color: rgb(66, 25, 112);
+
+  border: 1px solid white;
+
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.5);
+}

@@ -1,50 +1,41 @@
-import { useState } from 'react'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
-import Container from './components/Container'
-import MovieList from './components/MovieList'
-import SearchBar from './components/SearchBar'
+import BasicLayout from './layouts/BasicLayout'
+import HomePage from './pages/HomePage'
+import FavoritePage from './pages/FavoritePage'
+import NotFound from './pages/NotFound'
 
-import { allMovies } from './data/movies'
+
+const router = createBrowserRouter([
+  {
+   path: '/',  element: <BasicLayout/>,
+   children: [
+     {
+      index: true,
+      element: <HomePage/>
+     },
+     {
+      path: '/movie/:id',
+      //element: <Animal/>
+     },  
+     {
+      path: '/favorite',
+      element: <FavoritePage/>
+     }
+   ]
+  },
+  {
+   path: '*',
+   element: <NotFound />
+  }
+])
 
 
 function App() {
 
-  const [movies, setMovies] = useState(allMovies)
-  const [title, setTitle] = useState('')
-
-  const filteredMovies = movies.filter((movie) =>
-    movie.title.toLowerCase().includes(title.toLowerCase())
-  )
-
-  const favoriteCount = movies.filter((movie) => movie.favorite).length
-
-  function addFavorite(id) {
-    setMovies((prevMovies) =>
-      prevMovies.map((movie) => {
-        if (movie.id === id) {
-          return {...movie, favorite: !movie.favorite}
-        } 
-        else {
-          return movie
-        }
-      })
-    )
-  }
-
-  return (
-    <div>
-      <SearchBar 
-        searchTerm={title} 
-        onSearch={setTitle} 
-      />
-      <div className="favorite-counter">
-        {favoriteCount} ⭐
-      </div>
-      <Container>
-        <MovieList list={filteredMovies} toggleFavorite={addFavorite}/>   
-      </Container>
-    </div>
-  )
+  return ( 
+    <RouterProvider router={router} />   
+  ); 
 }
 
 export default App

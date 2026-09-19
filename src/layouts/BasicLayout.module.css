@@ -1,0 +1,21 @@
+.layout 
+{
+ height: 100%;
+ display: grid;
+ grid-template-rows: min-content 1fr;
+ grid-template-areas:
+   "navbar"
+   "content";
+}
+
+.navbar 
+{
+ width: 100%;
+ grid-area: navbar;
+}
+
+.content 
+{
+ width: 100%;
+ grid-area: content;
+}

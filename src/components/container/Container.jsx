@@ -1,7 +1,10 @@
+import styles from './Container.module.css'
+
+
 function Container({ children }) {
   
   return (
-    <div className="movies-container">
+    <div className={styles.container}>
       {children}
     </div>
   )

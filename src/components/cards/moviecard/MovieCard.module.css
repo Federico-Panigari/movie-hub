@@ -1,0 +1,90 @@
+.card 
+{
+ position: relative;
+ width: 200px;
+ height: 320px;
+ margin: 15px;
+ border: 1px solid black;
+ border-radius: 25px;
+ overflow: hidden;
+ box-shadow: 0px 0px 10px 1px;
+ transition: transform 0.3s ease;
+}
+
+.card:hover 
+{
+ transform: scale(1.02);
+}
+
+.card .image
+{
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+}
+
+.card .flag
+{
+ position: absolute;
+ top: 15px;
+ left: 10px;
+ margin: 0px;
+ padding: 5px 8px;
+ color: #fff;
+ font-size: 13px;
+ font-weight: 600;
+ background-color: rgb(66, 25, 112);
+ border-radius: 10px;
+}
+
+.card .favorite
+{
+ position: absolute;
+ top: 10px;
+ right: 10px;    
+ width: 45px;
+ height: 45px;
+ padding: 0; 
+ color: white;
+ font-size: 35px; 
+ text-align: center;
+ line-height: 43px; 
+ border: 0.5px solid white;
+ border-radius: 50px;
+ background-color: rgb(66, 25, 112); 
+}
+
+.card .data
+{
+ position: absolute;
+ bottom: 0px;
+ width: 100%;
+ height: 80px;
+ padding: 13px;
+ background-color: rgba(44, 16, 75, 0.8);
+ box-shadow: 0 -20px 20px rgba(44, 16, 75, 0.8);
+}
+
+.data .title 
+{
+ margin: 0px 0px 10px 0px;
+ color: white;
+ font-size: 21px;
+ font-weight: 700;
+ line-height: 1.2;
+}
+
+.data .year
+{
+ margin: 0px 0px 5px 0px;
+ color: rgba(255, 255, 255, 0.75);
+ font-size: 14px;
+ font-weight: 500;
+}
+
+.data .genre
+{
+ margin: 0px 0px 5px 0px;
+ color: rgba(255, 255, 255, 0.9);
+ font-size: 14px;
+}
